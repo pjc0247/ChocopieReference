@@ -11,6 +11,6 @@ map
   파라미터
 !size 18
 !style bold
-      name
+      Name (String)
 !style none
           매핑할 이름

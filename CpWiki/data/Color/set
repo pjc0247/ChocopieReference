@@ -11,18 +11,18 @@ set
   파라미터
 !size 18
 !style bold
-      Red
+      Red (Number)
 !style none
           빨간색의 크기 (0~255)
 !style bold
-      Green
+      Green (Number)
 !style none
           초록색의 크기 (0~255)
 !style bold
-      Blue
+      Blue (Number)
 !style none
           파란색의 크기 (0~255)
 !style bold
-      Alpha
+      Alpha (Number) (Number)
 !style none
           알파값의 크기 (0~255), 기본값 255

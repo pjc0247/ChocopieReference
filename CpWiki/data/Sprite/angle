@@ -3,7 +3,7 @@
 angle
 
 !size 12
-    원형 : float
+    원형 : Number
 
 !size 18
 !style none

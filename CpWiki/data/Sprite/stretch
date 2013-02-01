@@ -11,18 +11,18 @@ stretch
   파라미터
 !size 18
 !style bold
-      x
+      x (Number)
 !style none
           드로잉 할 위치의 x좌표(pixel)
 !style bold
-      y
+      y (Number)
 !style none
           드로잉 할 위치의 y좌표(pixel)
 !style bold
-      w
+      w (Number)
 !style none
           가로 크기(pixel)
 !style bold
-      h
+      h (Number)
 !style none
           세로 크기(pixel)

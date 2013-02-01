@@ -11,11 +11,11 @@ draw
   파라미터
 !size 18
 !style bold
-      x
+      x (Number)
 !style none
           드로잉 할 위치의 x좌표(pixel)
 !style bold
-      y
+      y (Number)
 !style none
           드로잉 할 위치의 y좌표(pixel)
 

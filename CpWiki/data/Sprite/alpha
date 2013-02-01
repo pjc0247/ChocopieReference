@@ -3,7 +3,7 @@
 alpha
 
 !size 12
-    원형 : Fixnum
+    원형 : Number
 
 !size 18
 !style none

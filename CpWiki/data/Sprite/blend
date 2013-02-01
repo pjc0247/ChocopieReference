@@ -3,7 +3,7 @@
 blend
 
 !size 12
-    원형 : Fixnum
+    원형 : Integer
 
 !size 18
 !style none
