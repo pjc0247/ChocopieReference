@@ -1,0 +1,16 @@
+!size 25
+!style bold
+map
+
+!size 18
+!style none
+   스프라이트를 지정한 이름으로 매핑한다.
+
+!size 21
+!style bold
+  파라미터
+!size 18
+!style bold
+      name
+!style none
+          매핑할 이름

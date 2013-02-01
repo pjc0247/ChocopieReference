@@ -1,0 +1,22 @@
+!size 25
+!style bold
+alpha
+
+!size 12
+    원형 : Fixnum
+
+!size 18
+!style none
+   스프라이트의 알파값을 저장하는 변수.
+
+   알파 값은 스프라이트가 얼마나 불투명하게 그려질지를
+   지정하는 값이다. (0~255)
+
+   0에서 완전 투명 - 255에서 완전 불투명
+
+!size 21
+!style bold
+  접근 권한
+!size 18
+!style none
+          읽기 / 쓰기

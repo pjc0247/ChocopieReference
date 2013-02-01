@@ -141,7 +141,7 @@ class ResultBox < WindowBase
 
 	                @layerObject.add o      
 		end
-		ystep += size
+		ystep += size  + 3
             end
         end
         

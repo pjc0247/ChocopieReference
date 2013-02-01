@@ -1,0 +1,20 @@
+!size 25
+!style bold
+angle
+
+!size 12
+    원형 : float
+
+!size 18
+!style none
+   스프라이트의 각도(degree)를 저장하는 변수.
+
+   angle값은 스프라이트가 몇 도만큼 회전되어서 그려질지
+   지정하는 값이다.
+
+!size 21
+!style bold
+  접근 권한
+!size 18
+!style none
+          읽기 / 쓰기

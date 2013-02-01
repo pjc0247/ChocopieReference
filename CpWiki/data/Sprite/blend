@@ -1,0 +1,22 @@
+!size 25
+!style bold
+blend
+
+!size 12
+    원형 : Fixnum
+
+!size 18
+!style none
+   스프라이트의 블렌딩 방식을 지정하는 변수.
+
+   스프라이트가 그려질 때 이전에 그려진 결과물과
+   어떻게 색을 섞을지 결정한다.
+
+   Blend상수가 사용된다.
+
+!size 21
+!style bold
+  접근 권한
+!size 18
+!style none
+          읽기 / 쓰기

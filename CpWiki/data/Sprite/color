@@ -1,0 +1,20 @@
+!size 25
+!style bold
+color
+
+!size 12
+    원형 : Color
+
+!size 18
+!style none
+   스프라이트의 색조 값을 지정하는 변수.
+
+   스프라이트의 원본 색상 값에 color값을 곱해서
+   그려지게 된다.
+
+!size 21
+!style bold
+  접근 권한
+!size 18
+!style none
+          읽기 / 쓰기
