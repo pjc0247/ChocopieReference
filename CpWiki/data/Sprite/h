@@ -1,0 +1,14 @@
+!size 25
+!style bold
+h
+
+!size 18
+!style none
+   스프라이트의 세로 조각 하나의 크기(pixel)를 얻어온다.
+
+!size 21
+!style bold
+  반환값
+!size 18
+!style none
+          세로 조각 하나의 크기(pixel)

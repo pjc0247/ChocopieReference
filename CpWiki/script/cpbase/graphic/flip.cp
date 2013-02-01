@@ -1,0 +1,3 @@
+﻿#NONE = 0
+HORIZONAL = 1
+VERTICAL = 2

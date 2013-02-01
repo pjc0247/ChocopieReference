@@ -1,0 +1,28 @@
+!size 25
+!style bold
+stretch
+
+!size 18
+!style none
+   지정된 위치에 지정된 크기로 스프라이트를 그린다.
+
+!size 21
+!style bold
+  파라미터
+!size 18
+!style bold
+      x
+!style none
+          드로잉 할 위치의 x좌표(pixel)
+!style bold
+      y
+!style none
+          드로잉 할 위치의 y좌표(pixel)
+!style bold
+      w
+!style none
+          가로 크기(pixel)
+!style bold
+      h
+!style none
+          세로 크기(pixel)

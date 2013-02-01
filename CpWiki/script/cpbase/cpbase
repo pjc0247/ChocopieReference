@@ -1,0 +1,20 @@
+﻿###################################################
+#             ChocoPie GameEngine                 #
+#                           Cp Base               #
+###################################################
+
+import 'cpbase/system/*'
+import 'cpbase/task/*'
+import 'cpbase/datastruct/*'
+import 'cpbase/util/*'
+import 'cpbase/audio/*'
+import 'cpbase/graphic/*'
+import 'cpbase/gameObject/*'
+import 'cpbase/input/*'
+import 'cpbase/scene/*'
+import 'cpbase/physics/*'
+import 'cpbase/event/*'
+import 'cpbase/window/*'
+import 'cpbase/particle/*'
+
+import 'cpbase/input/touch/*'

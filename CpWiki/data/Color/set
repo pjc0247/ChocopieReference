@@ -1,0 +1,28 @@
+!size 25
+!style bold
+set
+
+!size 18
+!style none
+   RGBA 색상값을 설정한다
+
+!size 21
+!style bold
+  파라미터
+!size 18
+!style bold
+      Red
+!style none
+          빨간색의 크기 (0~255)
+!style bold
+      Green
+!style none
+          초록색의 크기 (0~255)
+!style bold
+      Blue
+!style none
+          파란색의 크기 (0~255)
+!style bold
+      Alpha
+!style none
+          알파값의 크기 (0~255), 기본값 255

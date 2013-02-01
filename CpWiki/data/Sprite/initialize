@@ -1,0 +1,27 @@
+!size 25
+!style bold
+initialize
+
+!size 18
+!style none
+   Sprite 클래스를 초기화한다.
+
+!size 21
+!style bold
+  파라미터
+!size 18
+!style bold
+      Image
+!style none
+          불러올 이미지의 이름
+          nil일경우 RenderToTexture용 텍스쳐 생성
+!style bold
+      WidthSlice
+!style none
+          이미지의 가로 조각 수, 기본값 1
+          Image가 nil일경우 텍스쳐의 가로 크기
+!style bold
+      HeightSlice
+!style none
+          이미지의 세로 조각 수, 기본값 1
+          Image가 nil일경우 텍스쳐의 세로 크기
