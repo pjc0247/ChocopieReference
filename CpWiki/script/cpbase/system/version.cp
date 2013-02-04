@@ -18,7 +18,7 @@ def getMajorVersion
     return 1
 end
 def getMinorVersion
-    return 40
+    return 42
 end
 def getFixVersion
     return 0

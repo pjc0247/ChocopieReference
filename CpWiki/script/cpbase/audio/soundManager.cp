@@ -21,11 +21,11 @@ class SoundManager
     def volume
         return @volume
     end
-    def setVolume(v)
+    def volume=(v)
         @volume = v
 
         @a.each do |key,value|
-            key.setVolume(key.volume * (@volume/100))
+            key.volume = key.volume * (@volume/100)
         end
     end
 end

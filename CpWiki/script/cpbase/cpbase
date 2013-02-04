@@ -4,11 +4,13 @@
 ###################################################
 
 import 'cpbase/system/*'
+import 'cpbase/data/*'
 import 'cpbase/task/*'
 import 'cpbase/datastruct/*'
 import 'cpbase/util/*'
 import 'cpbase/audio/*'
 import 'cpbase/graphic/*'
+import 'cpbase/font/*'
 import 'cpbase/gameObject/*'
 import 'cpbase/input/*'
 import 'cpbase/scene/*'

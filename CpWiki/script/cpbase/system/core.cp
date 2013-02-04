@@ -19,6 +19,7 @@ def cpInitialize
         Log.output "스크립트 버전과 링크된 버전이 일치하지 않습니다."
     end
 
+	$ime = Ime.new
     $input = Input.new
     $mouse = Mouse.new
     $graphic = Graphic.new 

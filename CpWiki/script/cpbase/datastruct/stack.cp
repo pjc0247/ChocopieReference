@@ -30,5 +30,9 @@ class Stack
     end
     def pop
         @p -= 1
+		if @p < 0
+			Log.output "stack underflow"
+			@p = 0
+		end
     end
 end

@@ -27,6 +27,10 @@ class Vector
         push_back(v)
     end
 
+	def pop_back
+		self.delete_at @data.size
+	end
+
     def clear
         @data.clear
     end
