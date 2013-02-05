@@ -12,14 +12,13 @@
         
         @select = 0
         @hot = 0
+		@hover = nil
         
         @font = Font.new("gulim.ttc", 15)
         @font.style = BOLD
 	@cache = FontCache.new(@font)
 
         @visibleLines = ((h-6).to_f / (@font.size*1.2)).to_i
-
-        puts @visibleLines
         
         @scroll = ScrollBar.new(x+w,y,10,h)
         @scroll.ips = @visibleLines
@@ -66,8 +65,16 @@
         super
     end
 
+	def mouseHover(x,y)
+		@hover = true
+	end
+	def mouseLeave(x,y)
+		@hover = nil
+		@hot = -1
+	end
+
     def mouseMove(x,y,state)
-        @hot = ((y).to_f / (@font.size*1.2)).to_i + @scroll.value
+		@hot = ((y).to_f / (@font.size*1.2)).to_i + @scroll.value
     end
     def leftDown(x,y)
 	@cache.delete @item[@select]
