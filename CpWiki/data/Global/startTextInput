@@ -1,0 +1,9 @@
+!size 25
+!style bold
+startTextInput
+
+!size 18
+!style none
+   텍스트 입력을 받기 시작한다.
+   
+   입력된 내용은 getTextInput으로 얻을 수 있다.   
