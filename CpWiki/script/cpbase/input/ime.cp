@@ -9,13 +9,13 @@ class Ime
 	def dispose
 	end
 
-	def self.start
+	def start
 		startTextInput
 	end
-	def self.end
+	def end
 		endTextInput
 	end
-	def self.text
+	def text
 		getTextInput
 	end
 end

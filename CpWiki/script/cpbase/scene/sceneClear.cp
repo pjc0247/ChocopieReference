@@ -1,4 +1,4 @@
-﻿class Scene < SceneBase
+﻿class Scene
     def initialize
     end
     def dispose

@@ -7,12 +7,12 @@ class Scene < SceneBase
     def initialize
         super
 
-        @fontTitle = Font.new("c:\\windows\\fonts\\gulim.ttc", 30)
+        @fontTitle = Font.new("gulim.ttc", 30)
         @fontTitle.style = BOLD
         
-        @fontVersion = Font.new("c:\\windows\\fonts\\gulim.ttc", 20)
+        @fontVersion = Font.new("gulim.ttc", 20)
         @fontVersion.style = BOLD
-        
+
         @klassSearch = InputBox.new(10,10,150,30)
         @klassSearch.default = "Class name"
         @klassSearch.textChangedHandler = method(:klassSearch)
@@ -58,9 +58,10 @@ class Scene < SceneBase
     end
     def klassSearch(obj,null)
         @klassList.clear
- 
+        
+#        @klassList.add "Global"
         Dir.entries("data/").each do |klass|
-            if klass == '.' or klass == '..'
+            if klass == '.' or klass == '..'# or klass == "Global"
             elsif klass.downcase.include? obj.text.downcase
                 @klassList.add klass
             end
@@ -80,6 +81,9 @@ class Scene < SceneBase
             else
                 @methodList.add method
             end
+        end
+        if @methodList.item.size > 0
+            @result.load("data/" + @klass + "/" + @methodList.item[0])
         end
     end
 end

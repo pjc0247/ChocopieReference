@@ -28,7 +28,11 @@ class Vector
     end
 
 	def pop_back
-		self.delete_at @data.size
+		if @data.size > 0
+			self.delete_at @data.size
+		else
+			nil
+		end
 	end
 
     def clear
