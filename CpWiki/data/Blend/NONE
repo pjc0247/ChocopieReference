@@ -1,0 +1,10 @@
+!size 25
+!style bold
+NONE
+
+!size 18
+!style none
+   블렌딩을 하지 않는 모드.
+   알파값과 칼라키가 적용되지 않는다.
+   ( dst = src )
+

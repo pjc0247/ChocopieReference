@@ -1,0 +1,9 @@
+!size 25
+!style bold
+ADD
+
+!size 18
+!style none
+   °¡»ê ºí·»µù.
+   ( dst = (src * A) + dst )
+

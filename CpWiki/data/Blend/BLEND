@@ -1,0 +1,8 @@
+!size 25
+!style bold
+BLEND
+
+!size 18
+!style none
+   ¾ËÆÄ ºí·»µù.
+   ( dst = (src * A) + (dst * (1-A)) )
