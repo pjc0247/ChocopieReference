@@ -12,7 +12,7 @@ class Ime
 	def start
 		startTextInput
 	end
-	def end
+	def stop
 		endTextInput
 	end
 	def text
