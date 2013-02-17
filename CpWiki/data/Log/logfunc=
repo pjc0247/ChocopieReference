@@ -1,0 +1,16 @@
+!size 25
+!style bold
+logfunc=
+
+!size 18
+!style none
+   로그를 남길때 사용할 메소드를 설정합니다.
+
+!size 21
+!style bold
+  파라미터
+!size 18
+!style bold
+      logger (Method)
+!style none
+          로그를 남길 때 사용할 메소드

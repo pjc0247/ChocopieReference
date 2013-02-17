@@ -1,0 +1,8 @@
+!size 25
+!style bold
+initialize
+
+!size 18
+!style none
+   Log 클래스를 초기화합니다.
+
