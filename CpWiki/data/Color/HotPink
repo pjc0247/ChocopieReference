@@ -1,0 +1,14 @@
+!size 25
+!style bold
+HotPink
+
+!size 18
+!color 255,105,180
+!style bold
+  진한 분홍색 (■)
+!color 0,0,0
+!style none
+
+   R : 255
+   G : 105
+   B : 180

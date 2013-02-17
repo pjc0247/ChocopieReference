@@ -1,0 +1,14 @@
+!size 25
+!style bold
+Olive
+
+!size 18
+!color 128,128,0
+!style bold
+  올리브색 (■)
+!color 0,0,0
+!style none
+
+   R : 128
+   G : 128
+   B : 0

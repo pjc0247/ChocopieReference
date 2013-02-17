@@ -1,0 +1,14 @@
+!size 25
+!style bold
+DarkGray
+
+!size 18
+!color 64,64,64
+!style bold
+  어두운 회색 (■)
+!color 0,0,0
+!style none
+
+   R : 64
+   G : 64
+   B : 64
