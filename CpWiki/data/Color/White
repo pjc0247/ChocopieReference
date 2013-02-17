@@ -1,14 +1,8 @@
 !size 25
 !style bold
-White
+x
 
 !size 18
-!color 255,255,255
-!style bold
-  하얀색 (■)
 !color 0,0,0
 !style none
-
-   R : 255
-   G : 255
-   B : 255
+    손가락의 x좌표(pixel)
