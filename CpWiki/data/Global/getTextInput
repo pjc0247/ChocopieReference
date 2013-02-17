@@ -4,7 +4,7 @@ getTextInput
 
 !size 18
 !style none
-   텍스트 입력 모드일 때 입력된 텍스트를 얻어온다.
+   텍스트 입력 모드일 때 입력된 텍스트를 얻어옵니다.
 
 !size 21
 !style bold

@@ -4,7 +4,7 @@ initialize
 
 !size 18
 !style none
-   Sprite 클래스를 초기화한다.
+   Sprite 클래스를 초기화합니다.
 
 !size 21
 !style bold

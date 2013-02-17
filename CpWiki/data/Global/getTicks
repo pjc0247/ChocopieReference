@@ -5,7 +5,7 @@ getTicks
 !size 18
 !style none
    게임 엔진 기동 후 현재까지 경과된 시간(ms)
-   를 얻어온다.
+   를 얻어옵니다.
 
 !size 21
 !style bold

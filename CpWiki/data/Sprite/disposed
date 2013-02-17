@@ -4,7 +4,7 @@ disposed
 
 !size 18
 !style none
-   스프라이트가 정리(dispose)되었는지 조사한다.
+   스프라이트가 정리(dispose)되었는지 조사합니다.
 
 !size 21
 !style bold

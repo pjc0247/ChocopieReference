@@ -4,7 +4,7 @@ draw
 
 !size 18
 !style none
-   지정된 위치에 스프라이트를 그린다.
+   지정된 위치에 스프라이트를 그립니다.
 
 !size 21
 !style bold
