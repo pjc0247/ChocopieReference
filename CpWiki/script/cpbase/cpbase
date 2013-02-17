@@ -19,5 +19,6 @@ import 'cpbase/physics/*'
 import 'cpbase/event/*'
 import 'cpbase/window/*'
 import 'cpbase/particle/*'
+import 'cpbase/network/*'
 
 import 'cpbase/input/touch/*'

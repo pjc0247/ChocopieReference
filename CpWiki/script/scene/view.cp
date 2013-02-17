@@ -7,6 +7,8 @@ class Scene < SceneBase
     def initialize
         super
 
+	p Marshal.methods
+
         @fontTitle = Font.new("gulim.ttc", 30)
         @fontTitle.style = BOLD
         

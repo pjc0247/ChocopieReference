@@ -77,9 +77,9 @@
 		@hot = ((y).to_f / (@font.size*1.2)).to_i + @scroll.value
     end
     def leftDown(x,y)
-	@cache.delete @item[@select]
+		@cache.delete @item[@select]
         @select = ((y).to_f / (@font.size*1.2)).to_i + @scroll.value
-	@cache.delete @item[@select]
+		@cache.delete @item[@select]
         if @item[@select] != nil
             @itemSelectedHandler.call(self,@select)
         end
@@ -96,9 +96,7 @@
     def clear
         @item.clear
         @scroll.max = 0
-        @scroll.scroll = 0
-
-
+        @scroll.scroll = 0 
     end
     
     def initializeHandler
