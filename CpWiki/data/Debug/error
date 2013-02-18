@@ -1,0 +1,18 @@
+!size 25
+!style bold
+[Static] error
+
+!size 18
+!style none
+   에러 메세지를 출력합니다.
+   이 메세지는 메세지 박스 창에 출력되며 프로그램의
+   동작이 일시 중지됩니다.
+
+!size 21
+!style bold
+  파라미터
+!size 18
+!style bold
+      message (String)
+!style none
+          에러 메세지

@@ -1,0 +1,23 @@
+!size 25
+!style bold
+[Static] eval
+
+!size 18
+!style none
+   Ruby 문장을 실행합니다.
+
+!size 21
+!style bold
+  파라미터
+!size 18
+!style bold
+      command (String)
+!style none
+          실행할 Ruby 문장
+
+!size 21
+!style bold
+  반환값
+!size 18
+!style none
+          실행 결과값

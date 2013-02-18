@@ -1,0 +1,18 @@
+!size 25
+!style bold
+[Static] assert
+
+!size 18
+!style none
+   코드 블록을 검사합니다.
+   해당 코드 블럭의 결과가 false일 경우에 에러 메세지를
+   출력합니다.
+
+!size 21
+!style bold
+  파라미터
+!size 18
+!style bold
+      block (Block)
+!style none
+          검사할 코드 블럭

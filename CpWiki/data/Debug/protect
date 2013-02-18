@@ -1,0 +1,17 @@
+!size 25
+!style bold
+[Static] protect
+
+!size 18
+!style none
+   코드 블럭에서 발생하는 에러를 보호합니다.
+   만약 에러가 발생할 경우 에러 메세지를 출력합니다.
+
+!size 21
+!style bold
+  파라미터
+!size 18
+!style bold
+      block (Block)
+!style none
+          보호할 코드 블럭
