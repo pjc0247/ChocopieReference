@@ -12,4 +12,4 @@ h
   반환값
 !size 18
 !style none
-          세로 조각 하나의 크기(pixel) (Number)
+          세로 조각 하나의 크기(pixel) (Integer)
