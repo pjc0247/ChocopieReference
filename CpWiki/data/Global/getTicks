@@ -12,4 +12,4 @@ getTicks
   반환값
 !size 18
 !style none
-          경과된 시간(ms)
+          경과된 시간(ms) (Integer)
