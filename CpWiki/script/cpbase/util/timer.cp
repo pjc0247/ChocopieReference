@@ -13,6 +13,7 @@ class Timer
         @callback = block
         @started = 0
 
+
         if @callback != nil
             sysobj_add(self)
         end
@@ -24,7 +25,7 @@ class Timer
     end
     
     def stop
-        @pause = 1
+        @started = 0
     end
     def start
         @started = 1
@@ -35,7 +36,7 @@ class Timer
         @pause = getTicks
     end
     def paused
-        if @pause == 1
+        if @pause > 0
             return true
         else return nil
         end
@@ -45,7 +46,7 @@ class Timer
         @pause = 0
     end
 
-    def tick
+    def ticks
         getTicks-@start_tick
     end
 
@@ -55,7 +56,7 @@ class Timer
             return nil
         end    
 
-        if getTicks-@start_tick >= @interval
+        if ticks >= @interval
             if @callback == nil
                 start
             end
@@ -71,7 +72,7 @@ class Timer
             return
         end
 
-        if getTicks-@start_tick >= @interval
+        if ticks >= @interval
             start
             @callback.call
         end        

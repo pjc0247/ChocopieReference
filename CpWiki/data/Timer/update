@@ -1,0 +1,9 @@
+!size 25
+!style bold
+update
+
+!size 18
+!style none
+   타이머를 업데이트합니다.
+
+   이 메소드는 Chocopie 내부적으로 자동으로 실행됩니다.

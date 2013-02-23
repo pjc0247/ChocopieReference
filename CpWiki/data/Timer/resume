@@ -1,0 +1,8 @@
+!size 25
+!style bold
+resume
+
+!size 18
+!style none
+   pause될 당시의 tick count를 복구하여 타이머를
+   재개합니다.

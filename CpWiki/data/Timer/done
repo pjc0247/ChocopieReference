@@ -1,0 +1,15 @@
+!size 25
+!style bold
+done
+
+!size 18
+!style none
+   타이머가 시간이 다 되었는지를 조사합니다.
+
+   만약 시간이 다 되었다면, tick count를 초기화합니다.
+!size 21
+!style bold
+  반환값
+!size 18
+!style none
+          조사 결과 (Boolean)

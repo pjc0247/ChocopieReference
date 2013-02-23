@@ -1,0 +1,25 @@
+!size 25
+!style bold
+initialize
+
+!size 18
+!style none
+   Timer 클래스를 초기화합니다.
+
+!size 21
+!style bold
+  파라미터
+!size 18
+!style bold
+      Interval (Integer)
+!style none
+          타이머의 발생 주기(ms), 기본값 0
+!style bold
+      Callback (Block)
+!style none
+          타이머 발생 시간마다 호출될 콜백.
+          기본값 nil
+
+          콜백이 사용되는 타이머는 반드시 사용 후
+          dispose 메소드로 정리해주어야 합니다.
+

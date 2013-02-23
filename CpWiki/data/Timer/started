@@ -1,0 +1,14 @@
+!size 25
+!style bold
+started
+
+!size 18
+!style none
+   타이머가 start되었는지 여부를 조사합니다.
+
+!size 21
+!style bold
+  반환값
+!size 18
+!style none
+          조사 결과 (Boolean)

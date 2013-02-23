@@ -1,0 +1,23 @@
+!size 25
+!style bold
+ticks
+
+!size 18
+!style none
+   타이머의 tick count를 조사합니다.
+  
+   tick count는 타이머가 interval값에 도달하기까지의
+   시간(ms)입니다.
+
+   done 메소드에서 true가 반환되었거나, Callback이
+   실행될 때 마다 0으로 초기화됩니다.
+
+   tick count 값은 딜레이, 시스템 지연 등의 원인으로
+   intervaㅣ보다 높은 값을 가질 수 있습니다.
+
+!size 21
+!style bold
+  반환값
+!size 18
+!style none
+          Tick count (Integer)
