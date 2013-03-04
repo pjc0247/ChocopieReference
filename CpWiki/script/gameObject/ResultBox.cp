@@ -107,24 +107,26 @@ class ResultBox < WindowBase
                 cmd = cmd[1..cmd.length]
                 param = sp[1]
                 
-                if cmd == "color"
-                    c = param.split(',')
-                    color = Color.new(
-                                c[0].to_i,
-                                c[1].to_i,
-                                c[2].to_i)
-                elsif cmd == "size"
-                    size = param.to_i
-                elsif cmd == "style"
-                    if param == "bold"
-                        style = BOLD
-                    elsif param == "none"
-                        style = NONE
-                    elsif param == "underline"
-                        style = UNDERLINE
-                    elsif param == "stroke"
-                        style = STROKE
-                    end
+                case cmd
+					when "color"
+						c = param.split(',')
+						color = Color.new(
+									c[0].to_i,
+									c[1].to_i,
+									c[2].to_i)
+					when "size"
+						size = param.to_i
+					when "style"
+						case param
+							when "bold"
+								style = BOLD
+							when "none"
+								style = NONE
+							when "underline"
+								style = UNDERLINE
+							when "stroke"
+								style = STROKE
+						end
                 end
             else
 				if doc[i].length > 1
@@ -143,10 +145,7 @@ class ResultBox < WindowBase
 					@layerObject.add o      
 				end
 
-				s = @font[size].query doc[i]
-				p s
 				ystep += size + 5
-				puts doc[i]
 			end
         end
 
@@ -161,6 +160,6 @@ class ResultBox < WindowBase
         @scroll.max = @ch - @h
         @scroll.ips = @h
 
-        puts "ch " + @ch.to_s + ", ips " + @h.to_s
+       # puts "ch " + @ch.to_s + ", ips " + @h.to_s
     end
 end
