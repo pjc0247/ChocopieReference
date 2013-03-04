@@ -1,8 +1,9 @@
 !size 25
 !style bold
-initialize
+[Class] Log
 
 !size 18
 !style none
-   Log 클래스를 초기화합니다.
+   엔진 구동 중 발생하는 에러, 경고, 정보등을 로그로
+   남기기 위한 클래스입니다.
 
