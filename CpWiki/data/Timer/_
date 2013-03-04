@@ -1,0 +1,9 @@
+!size 25
+!style bold
+[Class] Timer
+
+!size 18
+!style none
+   지정된 시간 후에 어떠한 작업을 하거나
+   지정된 시간마다 콜백 또는 알림이 필요할 때 사용하는
+   클래스입니다.
