@@ -1,0 +1,17 @@
+!size 25
+!style bold
+interval
+
+!size 12
+    원형 : Integer
+
+!size 18
+!style none
+   타이머가 실행되는 주기.(ms)
+
+!size 21
+!style bold
+  접근 권한
+!size 18
+!style none
+          읽기 / 쓰기

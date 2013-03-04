@@ -2,9 +2,12 @@
 !style bold
 ticks
 
+!size 12
+    원형 : Integer
+
 !size 18
 !style none
-   타이머의 tick count를 조사합니다.
+   타이머의 tick count값입니다.
   
    tick count는 타이머가 interval값에 도달하기까지의
    시간(ms)입니다.
@@ -17,7 +20,7 @@ ticks
 
 !size 21
 !style bold
-  반환값
+  접근 권한
 !size 18
 !style none
-          Tick count (Integer)
+          읽기
