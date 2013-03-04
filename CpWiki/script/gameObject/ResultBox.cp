@@ -32,7 +32,7 @@
         @cache.draw(x,y,@msg)    
     end
     def update
-        draw(@x,@y-@parent.scroll.scroll)
+        draw(@x,@y-@parent.scroll.value)
     end
 end
 class LinkObject
@@ -142,12 +142,14 @@ class ResultBox < WindowBase
 
 					@layerObject.add o      
 				end
-				ystep += size  + 3
+
+				s = @font[size].query doc[i]
+				p s
+				ystep += size + 5
+				puts doc[i]
 			end
         end
 
-		p ystep
-        
         o = TextObject.new(360,ystep + 30,"written by pjc")
         o.font = @font[13]
         o.style = BOLD
@@ -158,7 +160,7 @@ class ResultBox < WindowBase
         @ch = ystep + 100
         @scroll.max = @ch - @h
         @scroll.ips = @h
-        
+
         puts "ch " + @ch.to_s + ", ips " + @h.to_s
     end
 end
