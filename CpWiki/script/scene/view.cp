@@ -61,7 +61,7 @@ class Scene < SceneBase
         @klassList.clear
         
 #        @klassList.add "Global"
-        Dir.entries("data/").each do |klass|
+       Dir.entries("data/").each do |klass|
             if klass == '.' or klass == '..'# or klass == "Global"
             elsif klass.downcase.include? obj.text.downcase
                 @klassList.add klass
