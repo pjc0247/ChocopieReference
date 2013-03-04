@@ -1,0 +1,11 @@
+!size 25
+!style bold
+initialize
+
+!size 18
+!style none
+   Scene을 초기화합니다.
+
+   리소스의 로드, 레이어의 생성, 게임 오브젝트의 생성
+   작업등이 이 메소드에서 이루어집니다.
+

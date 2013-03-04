@@ -1,0 +1,11 @@
+!size 25
+!style bold
+dispose
+
+!size 18
+!style none
+   Scene을 정리합니다.
+
+   사용한 리소스의 정리, 오브젝트의 파괴등이 이
+   메소드에서 이루어집니다.
+

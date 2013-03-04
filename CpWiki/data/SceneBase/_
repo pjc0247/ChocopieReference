@@ -1,0 +1,10 @@
+!size 25
+!style bold
+[Class] SceneBase
+
+!size 18
+!style none
+   Scene의 기본이 되는 클래스입니다.
+
+   이 클래스를 상속받아서 Scene을 생성합니다.
+
