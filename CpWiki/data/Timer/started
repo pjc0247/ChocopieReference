@@ -11,4 +11,5 @@ started
   반환값
 !size 18
 !style none
-          조사 결과 (Boolean)
+          참일 경우 true
+          거짓일 경우 nil
