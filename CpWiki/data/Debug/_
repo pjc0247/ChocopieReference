@@ -1,0 +1,8 @@
+!size 25
+!style bold
+[Class] Debug
+
+!size 18
+!style none
+   프로그램을 디버깅하고, 코드에 대한 예외 처리,
+   에러 메세지를 출력 할 수 있는 클래스입니다.
