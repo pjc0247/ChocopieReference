@@ -53,8 +53,8 @@ class ResultBox < WindowBase
         @ch = 0 # content height
         
         @font = []
-        @font[20] = Font.new("c:\\windows\\fonts\\gulim.ttc", 20)
-        @font[13] = Font.new("c:\\windows\\fonts\\gulim.ttc", 13)
+        @font[20] = Font.new("gulim.ttc", 20)
+        @font[13] = Font.new("gulim.ttc", 13)
         
         @layerObject = Layer.new(Z_OBJECT)
         $objmgr.delete @layerObject
@@ -88,8 +88,8 @@ class ResultBox < WindowBase
         
     end
     def load(file)
-	@layerObject.clear
-	@scroll.scroll = 0
+		@layerObject.clear
+		@scroll.scroll = 0
 
         f = File.new(file,"r")
         doc = f.readlines
@@ -132,7 +132,7 @@ class ResultBox < WindowBase
 			doc[i] = doc[i][0..doc[i].length-2]
 	                o = TextObject.new(10,ystep,doc[i])
          		       if @font[size] == nil
-	                    @font[size] = Font.new("c:\\windows\\fonts\\gulim.ttc", size)
+	                    @font[size] = Font.new("gulim.ttc", size)
          		       end
 	                o.font = @font[size]
          		       o.parent = self
