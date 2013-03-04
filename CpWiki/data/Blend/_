@@ -1,0 +1,8 @@
+!size 25
+!style bold
+[Const] Blend
+
+!size 18
+!style none
+   화면 또는 텍스쳐에 어떤 방식으로 대상을 블렌딩할 지
+   결정하는 상수들의 집합입니다.
