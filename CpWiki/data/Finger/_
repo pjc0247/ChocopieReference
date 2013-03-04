@@ -1,0 +1,8 @@
+!size 25
+!style bold
+[Class] Finger
+
+!size 18
+!style none
+   터치 입력을 받았을 때,
+   입력된 손가락 하나의 정보를 담아두는 클래스입니다.
