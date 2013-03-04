@@ -6,3 +6,4 @@ BLEND
 !style none
    ¾ËÆÄ ºí·»µù.
    ( dst = (src * A) + (dst * (1-A)) )
+
