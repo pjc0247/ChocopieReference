@@ -1,0 +1,16 @@
+!size 25
+!style bold
+disposed
+
+!size 18
+!style none
+   사운드가 정리(dispose)되었는지 조사합니다.
+
+!size 21
+!style bold
+  반환값
+!size 18
+!style none
+          정리되었다면 true
+          아니면 nil
+

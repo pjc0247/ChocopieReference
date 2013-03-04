@@ -1,0 +1,10 @@
+!size 25
+!style bold
+[Class] Sound
+
+!size 18
+!style none
+   사운드 관련 리소스를 로드하고 재생하는 등의
+   작업을 할 때 사용하는 클래스입니다.
+
+

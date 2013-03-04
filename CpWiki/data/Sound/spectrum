@@ -1,0 +1,22 @@
+!size 25
+!style bold
+spectrum
+
+!size 12
+    원형 : Array
+
+!size 18
+!style none
+   사운드의 파형(Spectrum)이 저장된 배열
+
+   배열의 크기는 512이며
+   각각의 원소의 범위는 0.0~1.0이다.
+
+   * Decibels = 10.0 * log10(val) * 2.0
+
+!size 21
+!style bold
+  접근 권한
+!size 18
+!style none
+          읽기

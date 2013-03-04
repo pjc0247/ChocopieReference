@@ -1,0 +1,20 @@
+!size 25
+!style bold
+volume
+
+!size 12
+    원형 : Integer
+
+!size 18
+!style none
+   사운드가 재생될 볼륨 (0~100)
+
+   0일 경우에 최소 (들리지 않음)
+   100일 경우에 최대 (최대 볼륨)
+
+!size 21
+!style bold
+  접근 권한
+!size 18
+!style none
+          읽기 / 쓰기
