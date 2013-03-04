@@ -18,6 +18,9 @@ class Log
     def self.logfunc=(lf)
         @@logfunc = lf
     end
+    def self.logfunc
+	@@logfunc
+    end
 
     def self.output(msg)
         @@logfunc.call msg

@@ -4,7 +4,7 @@
 ###################################################
 
 class Timer
-    attr_accessor :interval, :callback, :started
+    attr_accessor :interval, :callback
 
     def initialize(interval=0,block=nil)
         @interval = interval
@@ -40,6 +40,13 @@ class Timer
             return true
         else return nil
         end
+    end
+    def started
+	if @started == 1
+		return true
+	else
+		return nil
+	end
     end
     def resume
         @start_tick += getTicks-@pause
