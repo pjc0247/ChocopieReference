@@ -17,6 +17,8 @@ initialize
 !style none
           불러올 이미지의 이름
           nil일경우 RenderToTexture용 텍스쳐 생성
+
+          이 파일은 resource/폴더에 위치해 있어야 합니다.
 !style bold
       WidthSlice (Integer)
 !style none
@@ -35,4 +37,5 @@ initialize
 !style none
       로드 성공시 Sprite 오브젝트
       실패시 nil
+
 
