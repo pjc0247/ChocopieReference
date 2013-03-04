@@ -1,0 +1,9 @@
+!size 25
+!style bold
+[Class] SpriteDelayLoad
+
+!size 18
+!style none
+   Sprite 클래스를 상속받아
+   스프라이트가 화면에 첫번째로 그려지는 시점에 로드하는
+   지연 로드를 구현한 클래스입니다.
