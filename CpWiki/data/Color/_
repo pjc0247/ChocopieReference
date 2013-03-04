@@ -1,0 +1,8 @@
+!size 25
+!style bold
+[Class] Color
+
+!size 18
+!style none
+   RGBA 색상 정보를 저장하고, 
+   색상 프리셋을 사용하기 위한 클래스입니다.
