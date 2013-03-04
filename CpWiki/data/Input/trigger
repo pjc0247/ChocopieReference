@@ -1,0 +1,16 @@
+!size 25
+!style bold
+trigger
+
+!size 18
+!style none
+   해당 키보드 버튼이 이번 씬에 새롭게 눌려졌는지
+   조사합니다.
+
+!size 21
+!style bold
+  반환값
+!size 18
+!style none
+          참일 경우 true
+          거짓일 경우 nil
