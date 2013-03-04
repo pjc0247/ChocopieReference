@@ -2,14 +2,16 @@
 !style bold
 w
 
+!size 12
+    원형 : Integer
+
 !size 18
 !style none
-   스프라이트의 가로 조각 하나의 크기(pixel)를
-   얻어옵니다.
+   스프라이트의 가로 조각 하나의 크기(pixel)
 
 !size 21
 !style bold
-  반환값
+  접근 권한
 !size 18
 !style none
-          가로 조각 하나의 크기(pixel) (Integer)
+          읽기
