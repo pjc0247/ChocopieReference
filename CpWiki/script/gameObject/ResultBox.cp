@@ -127,23 +127,26 @@ class ResultBox < WindowBase
                     end
                 end
             else
+				if doc[i].length > 1
+					doc[i] = doc[i][0..doc[i].length-2]
+					o = TextObject.new(10,ystep,doc[i])
 
-		if doc[i].length > 1
-			doc[i] = doc[i][0..doc[i].length-2]
-	                o = TextObject.new(10,ystep,doc[i])
-         		       if @font[size] == nil
-	                    @font[size] = Font.new("gulim.ttc", size)
-         		       end
-	                o.font = @font[size]
-         		       o.parent = self
-         		       o.color = color
-	                o.style = style
+					if @font[size] == nil
+						@font[size] = Font.new("gulim.ttc", size)
+         			end
 
-	                @layerObject.add o      
-		end
-		ystep += size  + 3
-            end
+					o.font = @font[size]
+         			o.parent = self
+         			o.color = color
+					o.style = style
+
+					@layerObject.add o      
+				end
+				ystep += size  + 3
+			end
         end
+
+		p ystep
         
         o = TextObject.new(360,ystep + 30,"written by pjc")
         o.font = @font[13]
