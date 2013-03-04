@@ -7,8 +7,6 @@ class Scene < SceneBase
     def initialize
         super
 
-	p Marshal.methods
-
         @fontTitle = Font.new("gulim.ttc", 30)
         @fontTitle.style = BOLD
         
@@ -47,7 +45,7 @@ class Scene < SceneBase
         crt = $graphic.size
         $graphic.color = Color.White
         $graphic.fill(0,0,crt.w,crt.h)
-        
+
         drawText(20,356,"Chocopie Wiki",@fontTitle, 4,3)
         @fontVersion.style = BOLD
         drawText(643,345,"api version",@fontVersion, 2,1)
@@ -58,6 +56,7 @@ class Scene < SceneBase
     def methodSelected(obj,idx)
         @result.load("data/" + @klass + "/" + obj.item[idx])
     end
+
     def klassSearch(obj,null)
         @klassList.clear
         
@@ -78,8 +77,10 @@ class Scene < SceneBase
         end 
         
         @klass = obj.item[idx]
+
+		@methodList.add "_"
         Dir.entries("data/" + obj.item[idx] + "/").each do |method|
-            if method == '.' or method == '..'
+            if method == '.' or method == '..' or method == '_'
             else
                 @methodList.add method
             end
