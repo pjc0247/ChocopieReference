@@ -1,0 +1,46 @@
+!size 25
+!style bold
+initialize
+
+!size 18
+!style none
+   GameObject 클래스를 초기화합니다.
+
+   게임 오브젝트의 초기 위치와 스프라이트를
+   지정합니다.
+
+!size 21
+!style bold
+  파라미터
+!size 18
+!style bold
+      x (Number)
+!style none
+          게임 오브젝트의 초기 x좌표값(pixel)
+          
+          기본값 : 0
+!style bold
+      y (Number)
+!style none
+          게임 오브젝트의 초기 y좌표값(pixel)
+          
+          기본값 : 0
+!style bold
+      Sprite (Sprite)
+!style none
+          게임 오브젝트에 사용될 스프라이트 인스턴스
+   
+          nil일 경우 화면에 보이지 않는 게임 오브젝트로
+          판단하여 visible값이 false로 설정됩니다.
+
+          기본값 : nil
+
+!size 21
+!style bold
+  반환값
+!size 18
+!style none
+      생성 성공시 GameObject 오브젝트
+      실패시 nil
+
+

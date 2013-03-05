@@ -1,0 +1,11 @@
+!size 25
+!style bold
+[Class] GameObject
+
+!size 18
+!style none
+   게임에 사용되는 모든 게임 오브젝트들의 최상위
+   클래스 입니다.
+   
+   모든 게임 오브젝트들은 GameObject클래스를
+   상속받아 만들어지게 됩니다.

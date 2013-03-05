@@ -1,0 +1,22 @@
+!size 25
+!style bold
+layer
+
+!size 12
+    원형 : Layer
+
+!size 18
+!style none
+   이 게임 오브젝트가 속한 레이어 입니다.
+
+   레이어에 게임 오브젝트를 add시킬 때 자동으로 설정되며
+   만약 속한 레이어가 없다면 nil값을 돌려줍니다.
+
+   기본값 : nil
+
+!size 21
+!style bold
+  접근 권한
+!size 18
+!style none
+          읽기

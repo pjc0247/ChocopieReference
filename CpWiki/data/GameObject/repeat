@@ -1,0 +1,23 @@
+!size 25
+!style bold
+repeat
+
+!size 12
+    원형 : Boolean
+
+!size 18
+!style none
+   스프라이트 애니메이션이 완료되면 해당 애니메이션을
+   반복해서 출력할 지, 마지막 프레임에서 중단시킨
+   채로 남길 지 결정하는 값입니다.
+
+   true일 경우 애니메이션이 반복됩니다.
+
+   기본값 : true
+
+!size 21
+!style bold
+  접근 권한
+!size 18
+!style none
+          읽기 / 쓰기

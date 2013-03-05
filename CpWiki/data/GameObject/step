@@ -1,0 +1,22 @@
+!size 25
+!style bold
+step
+
+!size 12
+    원형 : Integer
+
+!size 18
+!style none
+   스프라이트 애니메이션에서 프레임 인덱스 값 입니다.
+   
+   이 변수는 Sprite의 step값과 별도이며 draw 메소드가
+   호출될 시 Sprite의 step값에 이 값이 적용됩니다.
+
+   기본값 : 0
+
+!size 21
+!style bold
+  접근 권한
+!size 18
+!style none
+          읽기 / 쓰기

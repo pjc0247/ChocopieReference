@@ -1,0 +1,22 @@
+!size 25
+!style bold
+origin
+
+!size 12
+    원형 : Point
+
+!size 18
+!style none
+   게임 오브젝트가 출력되는 좌표의 중심점 위치 입니다.
+
+   x, y값에 origin.x, origin.y 값이 빼어진 값이 최종적으로
+   draw 메소드로 전달됩니다.
+
+   기본값 : (0,0)
+
+!size 21
+!style bold
+  접근 권한
+!size 18
+!style none
+          읽기 / 쓰기

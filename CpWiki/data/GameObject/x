@@ -1,0 +1,20 @@
+!size 25
+!style bold
+x
+
+!size 12
+    원형 : Number
+
+!size 18
+!style none
+   게임 오브젝트가 화면에 표시되는 x좌표의
+   값입니다. (pixel)
+
+   기본값 : 0
+
+!size 21
+!style bold
+  접근 권한
+!size 18
+!style none
+          읽기 / 쓰기

@@ -1,0 +1,17 @@
+!size 25
+!style bold
+sprite
+
+!size 12
+    원형 : Sprite
+
+!size 18
+!style none
+   게임 오브젝트에 사용될 스프라이트의 인스턴스입니다.
+
+!size 21
+!style bold
+  접근 권한
+!size 18
+!style none
+          읽기 / 쓰기

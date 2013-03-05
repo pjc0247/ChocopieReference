@@ -1,0 +1,23 @@
+!size 25
+!style bold
+rect
+
+!size 18
+!style none
+   게임 오브젝트의 화면상의 범위를 얻어옵니다.
+
+   이 범위 값은 drawRect메소드나
+   collision처리에서 이용됩니다.
+
+   만약 게임 오브젝트의 범위값을 바꾸고 싶다면
+   이 메소드를 상속받아 원하는 값을 반환하는 메소드를
+   만들어서 사용해야 합니다.
+
+   기본값 : (0,0,sprite.w,sprite.h)      
+
+!size 21
+!style bold
+  반환값
+!size 18
+!style none
+     게임 오브젝트의 화면상 범위 (Rect)

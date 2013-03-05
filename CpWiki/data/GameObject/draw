@@ -1,0 +1,27 @@
+!size 25
+!style bold
+draw
+
+!size 18
+!style none
+   게임 오브젝트를 드로잉합니다.
+
+   게임 오브젝트의 모든 드로잉 작업이 이 메소드에서
+   처리됩니다.
+
+!size 21
+!style bold
+  파라미터
+!size 18
+!style bold
+      x (Number)
+!style none
+          그리기 해야 할 x좌표값(pixel)
+          
+          기본값 : 0
+!style bold
+      y (Number)
+!style none
+          그리기 해야 할 y좌표값(pixel)
+          
+          기본값 : 0

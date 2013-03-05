@@ -1,0 +1,23 @@
+!size 25
+!style bold
+visible
+
+!size 12
+    원형 : Boolean
+
+!size 18
+!style none
+   게임 오브젝트가 화면에 표시되는지의 여부를
+   설정합니다.
+ 
+   이 값이 false일 경우 해당 게임 오브젝트에 대한
+   draw 메소드는 호출되지 않습니다.
+
+   기본값 : true
+
+!size 21
+!style bold
+  접근 권한
+!size 18
+!style none
+          읽기 / 쓰기

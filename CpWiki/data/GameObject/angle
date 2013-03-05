@@ -1,0 +1,20 @@
+!size 25
+!style bold
+angle
+
+!size 12
+    원형 : Number
+
+!size 18
+!style none
+   게임 오브젝트의 스프라이트를 몇 도 기울여서
+   출력할지 결정하는 값입니다.
+
+   기본값 : 0
+
+!size 21
+!style bold
+  접근 권한
+!size 18
+!style none
+          읽기 / 쓰기
