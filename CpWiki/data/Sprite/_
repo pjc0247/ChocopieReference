@@ -5,5 +5,5 @@
 !size 18
 !style none
    그래픽 리소스를 로드하여 화면에 출력시키거나
-   RenderToTexture기능을 사용할 때
-   사용하는 클래스입니다.
+   RenderToTexture기능을 사용할 때 사용하는
+   클래스입니다.
