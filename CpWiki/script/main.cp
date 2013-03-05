@@ -41,5 +41,5 @@ begin
     $cp_window_title    = "Chocopie Wiki"
 
     # 첫 씬의 설정fffff
-    $scene.change "view"
+    $scene.change "title"
 end
