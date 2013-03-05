@@ -48,9 +48,9 @@ class Scene < SceneBase
 
         drawText(20,356,"Chocopie Wiki",@fontTitle, 4,3)
         @fontVersion.style = BOLD
-        drawText(643,345,"api version",@fontVersion, 2,1)
+        drawText(708,345,"api version",@fontVersion, 2,1)
         @fontVersion.style = NONE
-        drawText(693,366,"1.41.0",@fontVersion, 1,1)
+        drawText(758,366,"1.41.0",@fontVersion, 1,1)
     end
     
     def methodSelected(obj,idx)
