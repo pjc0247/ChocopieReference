@@ -1,0 +1,7 @@
+!size 25
+!style bold
+cp_major_version
+
+!size 18
+!style none
+   Chocopie 엔진의 부 버전값입니다.

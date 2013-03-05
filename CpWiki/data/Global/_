@@ -1,0 +1,9 @@
+!size 25
+!style bold
+Global
+
+!size 18
+!style none
+   초코파이 전역 메소드들입니다.
+
+   초코파이 어디서든 접근할 수 있습니다.

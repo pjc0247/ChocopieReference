@@ -1,0 +1,16 @@
+!size 25
+!style bold
+delay
+
+!size 18
+!style none
+   지정된 시간(ms)만큼 멈춥니다.
+
+!size 21
+!style bold
+  파라미터
+!size 18
+!style bold
+     time (Integer)
+!style none
+          멈출 시간(ms)
