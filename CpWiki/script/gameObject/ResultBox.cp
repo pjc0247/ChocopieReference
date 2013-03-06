@@ -15,6 +15,7 @@
         @y = y
     end
     def dispose
+		@cache.clear
     end
     
     def font=(font)
