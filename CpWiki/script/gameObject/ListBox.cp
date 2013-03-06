@@ -97,6 +97,7 @@
         @item.clear
         @scroll.max = 0
         @scroll.scroll = 0 
+        @select = 0
     end
     
     def initializeHandler
