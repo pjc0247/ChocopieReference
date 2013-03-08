@@ -16,7 +16,7 @@
         
         @font = Font.new("gulim.ttc", 15)
         @font.style = BOLD
-	@cache = FontCache.new(@font)
+		@cache = FontCache.new(@font)
 
         @visibleLines = ((h-6).to_f / (@font.size*1.2)).to_i
         
@@ -27,6 +27,8 @@
 
     def dispose
        super
+
+	   @scroll.dispose
     end
    
     def drawText(x,y,msg,color=Color.White,shadow=Color.DarkGray)
