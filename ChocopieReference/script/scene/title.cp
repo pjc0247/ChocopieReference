@@ -50,6 +50,7 @@ class Scene < SceneBase
 
 			if @titlePosition.x == 20
 				$scene.change "view"
+				return
 			end
 		end
 
