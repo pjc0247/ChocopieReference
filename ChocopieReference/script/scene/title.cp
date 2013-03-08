@@ -24,8 +24,6 @@ class Scene < SceneBase
 		@animateSize = Size.new((@titleSize.w - 350).to_f / 30, (@titleSize.h - 32).to_f / 30)
 		@animateTimer = Timer.new(30)
 
-		@animateTimer.start
-
 		$graphic.target = "titleText"
         drawText(0,0,"Chocopie Reference",@fontTitle, 5,4)
 		$graphic.target = nil
@@ -51,7 +49,7 @@ class Scene < SceneBase
 			@titleSize -= @animateSize
 
 			if @titlePosition.x == 20
-				@animateTimer.stop
+				$scene.change "view"
 			end
 		end
 
@@ -65,9 +63,9 @@ class Scene < SceneBase
     end
 
 	def keyDown(key)
-		$scene.change "view"
+		@animateTimer.start
 	end
 	def leftDown(x,y)
-		$scene.change "view"
+		@animateTimer.start
 	end
 end
