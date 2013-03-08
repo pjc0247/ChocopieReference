@@ -10,6 +10,8 @@ class Scene < SceneBase
 
 		@fontTitle = Font.new("gulim.ttc", 40)
 		@fontVersion = Font.new("gulim.ttc", 20)
+		@fontTitle.retain = 1
+		@fontVersion.retain = 1
 
 		@fontTitle.style = BOLD
 		size = @fontTitle.query "Chocopie Reference"

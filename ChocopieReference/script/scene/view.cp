@@ -7,11 +7,7 @@ class Scene < SceneBase
     def initialize
         super
 
-        @fontTitle = Font.new("gulim.ttc", 30)
-        @fontTitle.style = BOLD
-        
-        @fontVersion = Font.new("gulim.ttc", 20)
-        @fontVersion.style = BOLD
+        @fontTitle.size = 30
 
         @klassSearch = InputBox.new(10,10,150,30)
         @klassSearch.default = "Class name"
