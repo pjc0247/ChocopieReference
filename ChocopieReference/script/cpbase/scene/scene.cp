@@ -10,6 +10,11 @@ class SceneBase
         @id = 0
         
         #@_dispose = []
+		$scene.iv.each do |key,value|
+			puts "retain " + key.to_s
+			instance_variable_set(key,value)
+			instance_variable_get(key).retain = $scene.rc[key]
+        end
     end
     def dispose
         ## 씬이 종료되면 씬에 포함된 모든 객체를 dispose한다.

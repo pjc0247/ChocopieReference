@@ -7,6 +7,7 @@
 
 class SceneManager
     attr_reader :scene
+	attr_reader :iv, :rc
 
     @@stack = Stack.new
 
@@ -19,8 +20,9 @@ class SceneManager
     end
 
     def change(to)
-        iv = {}
-        rc = {}
+        @iv = {}
+        @rc = {}
+
         if @scene != nil    
             @scene.dispose
 
@@ -28,8 +30,8 @@ class SceneManager
                 if @scene.instance_variable_get(v).retain != 0
                     @scene.instance_variable_get(v).retain -= 1
 
-                    iv[v] = @scene.instance_variable_get(v)
-                    rc[v] = @scene.instance_variable_get(v).retain
+                    @iv[v] = @scene.instance_variable_get(v)
+                    @rc[v] = @scene.instance_variable_get(v).retain
                 end
 #if @scene.instance_variable_get(v).retain >= 0
 
@@ -45,12 +47,6 @@ class SceneManager
             import 'cpbase/scene/sceneClear.cp'
             import 'scene/' + to + '.cp'
             @scene = Scene.new
-
-            iv.each do |key,value|
-                puts "retain " + key.to_s
-                @scene.instance_variable_set(key,value)
-                @scene.instance_variable_get(key).retain = rc[key]
-            end
 
             $input.update
 
