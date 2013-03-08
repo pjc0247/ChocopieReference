@@ -11,11 +11,12 @@ class Scene < SceneBase
 		@fontTitle = Font.new("gulim.ttc", 40)
 		@fontVersion = Font.new("gulim.ttc", 20)
 
-		@titleText = Sprite.new(nil, $graphic.size.w, 80)
+		@fontTitle.style = BOLD
+		size = @fontTitle.query "Chocopie Reference"
+		@titleText = Sprite.new(nil, size.w, size.h)
 		@titleText.map "titleText"
 
 		$graphic.target = "titleText"
-		@fontTitle.style = BOLD
         drawText(0,0,"Chocopie Reference",@fontTitle, 4,3)
 		$graphic.target = nil
     end
