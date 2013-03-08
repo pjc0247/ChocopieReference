@@ -1,0 +1,9 @@
+!size 25
+!style bold
+[Class] FontCache
+
+!size 18
+!style none
+   폰트에서 렌더링된 결과를 메모리에 캐싱하여 다음 번
+   같은 내용의 문자열 출력을 요구할 때 빠르게 재출력을
+   할 수 있도록 해주는 클래스입니다.
