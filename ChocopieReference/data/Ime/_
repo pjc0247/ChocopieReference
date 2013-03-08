@@ -1,0 +1,8 @@
+!size 25
+!style bold
+[Class] Ime
+
+!size 18
+!style none
+   ascii 128글자 이외의 다국어 유니코드 문자열 입력을
+   받기 위한 클래스입니다.
