@@ -27,8 +27,6 @@
 
     def dispose
        super
-
-	   @scroll.dispose
     end
    
     def drawText(x,y,msg,color=Color.White,shadow=Color.DarkGray)

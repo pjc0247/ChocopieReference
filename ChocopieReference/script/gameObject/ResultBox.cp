@@ -62,9 +62,6 @@ class ResultBox < WindowBase
     end
 
     def dispose
-        @client.dispose
-        @layerObject.dispose
-		@scroll.dispose
         super
     end
 
