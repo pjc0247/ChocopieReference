@@ -10,6 +10,14 @@ class Scene < SceneBase
 
 		@fontTitle = Font.new("gulim.ttc", 40)
 		@fontVersion = Font.new("gulim.ttc", 20)
+
+		@titleText = Sprite.new(nil, $graphic.size.w, 80)
+		@titleText.map "titleText"
+
+		$graphic.target = "titleText"
+		@fontTitle.style = BOLD
+        drawText(0,0,"Chocopie Reference",@fontTitle, 4,3)
+		$graphic.target = nil
     end
 
     def dispose
@@ -27,8 +35,8 @@ class Scene < SceneBase
         $graphic.color = Color.White
         $graphic.fill(0,0,crt.w,crt.h)
 
-		@fontTitle.style = BOLD
-        drawText(200,156,"Chocopie Reference",@fontTitle, 4,3)
+        @titleText.draw(200,156)
+
         @fontVersion.style = BOLD
         drawText(708,345,"api version",@fontVersion, 2,1)
         @fontVersion.style = NONE
