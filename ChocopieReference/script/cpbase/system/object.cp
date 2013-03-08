@@ -1,4 +1,4 @@
-﻿class Object
+﻿class RootObject
 	def dispose
 		disposeAll
 	end
@@ -8,6 +8,7 @@
             rv = instance_variable_get(v)
             if rv.methods.member?(:dispose) == true and
                 rv.retain <= 0
+				#			p rv.methods.sort
                 puts "auto disposing : " + v
                 rv.dispose
             end

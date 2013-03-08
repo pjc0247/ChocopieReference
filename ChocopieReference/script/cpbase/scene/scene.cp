@@ -3,7 +3,7 @@
 #                           Scene Base            #
 ###################################################
 
-class SceneBase < Object
+class SceneBase < RootObject
     #attr_accessor :_dispose
 
     def initialize

@@ -3,7 +3,7 @@
 #                           Game Object           #
 ###################################################
 
-class GameObject < Object
+class GameObject < RootObject
     attr_accessor :x, :y
     attr_accessor :rect, :layer
     attr_accessor :scale

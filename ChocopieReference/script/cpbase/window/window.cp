@@ -51,7 +51,7 @@ def getFocus
     $windowFocused
 end
 
-class WindowBase < Object
+class WindowBase < RootObject
     attr_accessor :x,:y,:w,:h,:alpha
     attr_accessor :font, :visible
     attr_reader :tag, :id
@@ -90,9 +90,9 @@ class WindowBase < Object
         initializeHandler
     end
     def dispose
-		super
         $winmgr.delete self
         $layerWindow.delete self
+		super
     end
 
     def rect
