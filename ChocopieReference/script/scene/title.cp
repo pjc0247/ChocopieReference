@@ -22,7 +22,7 @@ class Scene < SceneBase
 		@titlePosition = Point.new(200,156)
 		@titleSize = Size.new(size.w,size.h)
 
-		@animatePosition = Point.new((@titlePosition.x - 20).to_f / 30, (@titlePosition.y - 356).to_f / 30)
+		@animatePosition = Point.new((@titlePosition.x - 15).to_f / 30, (@titlePosition.y - 363).to_f / 30)
 		@animateSize = Size.new((@titleSize.w - 350).to_f / 30, (@titleSize.h - 32).to_f / 30)
 		@animateTimer = Timer.new(30)
 
@@ -50,7 +50,7 @@ class Scene < SceneBase
 			@titlePosition -= @animatePosition
 			@titleSize -= @animateSize
 
-			if @titlePosition.x == 20
+			if @titlePosition.x.round == 15
 				$scene.change "view"
 				return
 			end
