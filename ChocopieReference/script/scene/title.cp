@@ -13,12 +13,6 @@ class Scene < SceneBase
 
 		@fontTitle.style = BOLD
 		size = @fontTitle.query "Chocopie Reference"
-		
-		@fontTitle.size = 30
-		targetSize = @fontTitle.query "ChocopieReference"
-		@fontTitle.size = 40
-
-		p targetSize
 
 		@titleText = Sprite.new(nil, size.w+5, size.h)
 		@titleText.map "titleText"
