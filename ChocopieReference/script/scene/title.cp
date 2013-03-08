@@ -16,6 +16,9 @@ class Scene < SceneBase
 		@titleText = Sprite.new(nil, size.w, size.h)
 		@titleText.map "titleText"
 
+		@titlePosition = Point.new(200,156)
+		@titleSize = Size.new(size.w,size.h)
+
 		$graphic.target = "titleText"
         drawText(0,0,"Chocopie Reference",@fontTitle, 4,3)
 		$graphic.target = nil
@@ -36,7 +39,8 @@ class Scene < SceneBase
         $graphic.color = Color.White
         $graphic.fill(0,0,crt.w,crt.h)
 
-        @titleText.draw(200,156)
+        @titleText.stretch(@titlePosition.x, @titlePosition.y, 
+							@titleSize.w, @titleSize.h)
 
         @fontVersion.style = BOLD
         drawText(708,345,"api version",@fontVersion, 2,1)
