@@ -17,6 +17,7 @@ class SceneBase < Object
         end
     end
     def dispose
+		super
     end
 
     def event(e,arg)

@@ -67,6 +67,8 @@ class GameObject < Object
         end
     end
     def dispose
+		super
+
         if @collisionCheck == 1 or @collisionCheck == true
             $colmgr.delete self
         end
