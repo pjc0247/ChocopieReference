@@ -6,7 +6,7 @@ class InputBox < WindowBase
 
     attr_accessor :text, :default
 
-    @@font = Font.new("c:\\windows\\fonts\\gulim.ttc",20)
+    @@font = Font.new("gulim.ttc",20)
     @@font.style = BOLD
 
     def initialize(x,y,w,h)
