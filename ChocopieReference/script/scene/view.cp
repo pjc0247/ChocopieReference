@@ -46,7 +46,7 @@ class Scene < SceneBase
         $graphic.color = Color.White
         $graphic.fill(0,0,crt.w,crt.h)
 
-        drawText(20,356,"Chocopie Wiki",@fontTitle, 4,3)
+        drawText(20,356,"Chocopie Reference",@fontTitle, 4,3)
         @fontVersion.style = BOLD
         drawText(708,345,"api version",@fontVersion, 2,1)
         @fontVersion.style = NONE
