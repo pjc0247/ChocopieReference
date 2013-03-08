@@ -13,14 +13,27 @@ class Scene < SceneBase
 
 		@fontTitle.style = BOLD
 		size = @fontTitle.query "Chocopie Reference"
-		@titleText = Sprite.new(nil, size.w, size.h)
+		
+		@fontTitle.size = 30
+		targetSize = @fontTitle.query "ChocopieReference"
+		@fontTitle.size = 40
+
+		p targetSize
+
+		@titleText = Sprite.new(nil, size.w+5, size.h)
 		@titleText.map "titleText"
 
 		@titlePosition = Point.new(200,156)
 		@titleSize = Size.new(size.w,size.h)
 
+		@animatePosition = Point.new((@titlePosition.x - 20).to_f / 30, (@titlePosition.y - 356).to_f / 30)
+		@animateSize = Size.new((@titleSize.w - 350).to_f / 30, (@titleSize.h - 32).to_f / 30)
+		@animateTimer = Timer.new(30)
+
+		@animateTimer.start
+
 		$graphic.target = "titleText"
-        drawText(0,0,"Chocopie Reference",@fontTitle, 4,3)
+        drawText(0,0,"Chocopie Reference",@fontTitle, 5,4)
 		$graphic.target = nil
     end
 
@@ -38,6 +51,15 @@ class Scene < SceneBase
         crt = $graphic.size
         $graphic.color = Color.White
         $graphic.fill(0,0,crt.w,crt.h)
+
+		if @animateTimer.done
+			@titlePosition -= @animatePosition
+			@titleSize -= @animateSize
+
+			if @titlePosition.x == 20
+				@animateTimer.stop
+			end
+		end
 
         @titleText.stretch(@titlePosition.x, @titlePosition.y, 
 							@titleSize.w, @titleSize.h)
