@@ -11,16 +11,16 @@ class Scene < SceneBase
 
         @klassSearch = InputBox.new(10,10,150,30)
         @klassSearch.default = "Class name"
-        @klassSearch.textChangedHandler = method(:klassSearch)
+        @klassSearch.textChangedHandler = :klassSearch
         
         @methodSearch = InputBox.new(165,10,180,30)
         @methodSearch.default = "Method name"
         
         @klassList = ListBox.new(10,45,140,300)
-        @klassList.itemSelectedHandler = method(:klassSelected)
+        @klassList.itemSelectedHandler = :klassSelected
        
         @methodList = ListBox.new(165,45,170,300)
-        @methodList.itemSelectedHandler = method(:methodSelected)
+        @methodList.itemSelectedHandler = :methodSelected
         
         @result = ResultBox.new(350,10,480,335)
         
