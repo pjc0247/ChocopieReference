@@ -58,7 +58,7 @@ class SceneManager
 
     def back
         @@stack.pop
-
+		
         if @@stack.top == nil
             puts "씬 뒤로가기 불가능"
         else
