@@ -47,7 +47,7 @@ class SceneManager
             @scene = Scene.new
 
             iv.each do |key,value|
-                puts key
+                puts "retain " + key.to_s
                 @scene.instance_variable_set(key,value)
                 @scene.instance_variable_get(key).retain = rc[key]
             end
