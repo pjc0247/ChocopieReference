@@ -65,6 +65,14 @@
         super
     end
 
+	def changeItem(to)
+		@cache.delete @item[@select]
+        @select = to
+		@cache.delete @item[@select]
+
+		@itemSelectedHandler.call(self,@select)
+	end
+
 	def mouseHover(x,y)
 		@hover = true
 	end
@@ -79,12 +87,9 @@
     def leftDown(x,y)
 		selected = ((y).to_f / (@font.size*1.2)).to_i + @scroll.value
 		return if @item[selected] == nil
-		@cache.delete @item[@select]
-        @select = selected
-		@cache.delete @item[@select]
 
-        @itemSelectedHandler.call(self,@select)
-    end
+		changeItem selected
+    end	
     
     def add(v)
         @item[@item.size] = v
