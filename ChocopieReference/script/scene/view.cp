@@ -29,6 +29,7 @@ class Scene < SceneBase
         @result = ResultBox.new(350,10,480,335)
         
         klassSearch(@klassSearch,nil)
+		klassSelected(@klassList, 0)
     end
 
     def dispose
