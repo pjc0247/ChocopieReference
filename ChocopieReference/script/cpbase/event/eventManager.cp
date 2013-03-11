@@ -29,12 +29,13 @@ class EventManager
 
         end
 
-        if e == FINGERDOWN
-            $touch.add Finger.new(arg.id,arg.x,arg.y)
-        elsif e == FINGERUP
-            $touch.delete Finger.new(arg.id,arg.x,arg.y)
-        elsif e == FINGERMOVE
-            $touch.move Finger.new(arg.id,arg.x,arg.y)
+        case e
+			when FINGERDOWN
+				$touch.add Finger.new(arg.id,arg.x,arg.y)
+			when FINGERUP
+				$touch.delete Finger.new(arg.id,arg.x,arg.y)
+			when FINGERMOVE
+	            $touch.move Finger.new(arg.id,arg.x,arg.y)
         end
 
         $winmgr.event(e,arg)
