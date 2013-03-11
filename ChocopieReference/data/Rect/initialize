@@ -1,0 +1,40 @@
+!size 25
+!style bold
+initialize
+
+!size 18
+!style none
+   Rect 클래스를 초기화합니다.
+
+!size 21
+!style bold
+  파라미터
+!size 18
+!style bold
+      x (Number)
+!style none
+          x좌표 (Pixel)
+          기본값 0
+!style bold
+      y (Number)
+!style none
+          y좌표 (Pixel)
+          기본값 0
+!style bold
+      w (Number)
+!style none
+          사각 영역의 너비 (Pixel)
+          기본값 0
+!style bold
+      h (Number)
+!style none
+          사각 영역의 높이 (Pixel)
+          기본값 0
+
+!size 21
+!style bold
+  반환값
+!size 18
+!style none
+      생성 성공시 Rect 오브젝트
+      실패시 nil

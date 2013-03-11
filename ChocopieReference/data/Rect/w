@@ -1,0 +1,17 @@
+!size 25
+!style bold
+w
+
+!size 12
+    원형 : Number
+
+!size 18
+!style none
+   사각 영역의 너비입니다. (Pixel)
+
+!size 21
+!style bold
+  접근 권한
+!size 18
+!style none
+          읽기 / 쓰기

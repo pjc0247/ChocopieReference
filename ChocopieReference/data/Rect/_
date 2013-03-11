@@ -1,0 +1,8 @@
+!size 25
+!style bold
+[Class] Rect
+
+!size 18
+!style none
+   x, y, w, h로 구성된
+   사각 영역 정보를 저장하기 위한 클래스입니다.
