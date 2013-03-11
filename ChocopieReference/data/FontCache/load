@@ -1,0 +1,16 @@
+!size 25
+!style bold
+load
+
+!size 18
+!style none
+   해당 메세지를 즉시 캐싱합니다.
+
+!size 21
+!style bold
+  파라미터
+!size 18
+!style bold
+      Msg (String)
+!style none
+          캐싱 할 메세지

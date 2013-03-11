@@ -1,0 +1,24 @@
+!size 25
+!style bold
+loaded
+
+!size 18
+!style none
+   해당 메세지가 캐싱되었는지 조사합니다.
+
+!size 21
+!style bold
+  파라미터
+!size 18
+!style bold
+      Msg (String)
+!style none
+          조사할 메세지
+
+!size 21
+!style bold
+  반환값
+!size 18
+!style none
+      캐싱 되있을 경우 true
+      아니면 nil

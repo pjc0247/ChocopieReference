@@ -1,0 +1,19 @@
+!size 25
+!style bold
+draw
+
+!size 18
+!style none
+   메세지를 출력합니다.
+
+   만약 메시지가 캐싱되어있다면 캐시를 사용하고
+   그렇지 않을 경우 새로 캐싱한 수 사용합니다.
+
+!size 21
+!style bold
+  파라미터
+!size 18
+!style bold
+      Msg (String)
+!style none
+          출력할 메세지

@@ -1,0 +1,24 @@
+!size 25
+!style bold
+initialize
+
+!size 18
+!style none
+   FontCache 클래스를 초기화합니다.
+
+!size 21
+!style bold
+  파라미터
+!size 18
+!style bold
+      Font (Font)
+!style none
+          캐싱에 사용할 폰트 인스턴스
+
+!size 21
+!style bold
+  반환값
+!size 18
+!style none
+      생성 성공시 FontCache 오브젝트
+      실패시 nil

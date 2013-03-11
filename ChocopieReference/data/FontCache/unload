@@ -1,0 +1,16 @@
+!size 25
+!style bold
+unload
+
+!size 18
+!style none
+   해당 메세지를 캐시에서 지웁니다.
+
+!size 21
+!style bold
+  파라미터
+!size 18
+!style bold
+      Msg (String)
+!style none
+          삭제할 메세지
