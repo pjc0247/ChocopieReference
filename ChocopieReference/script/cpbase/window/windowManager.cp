@@ -77,9 +77,11 @@ class WindowManager
                             if arg.key == TAB
                                 focusChanged = true
                                 focusNext
+							else
+								value.event(e,arg)
                             end
                         else
-                            value.event(e,arg)
+                            
                         end
                     end
                 end

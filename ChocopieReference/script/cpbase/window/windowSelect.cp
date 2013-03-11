@@ -5,36 +5,38 @@
 
 begin
     $_windowCursor    = Sprite.new("cpbase\\common\\windowCursor.png",1,1)
-rescue
-    puts "WindowSelect - 커먼 리소스 로드 실패"
+    if $_windowCursor == nil
+	Debug.error "WindowSelect - Failed to load common resource"
+    end   
 end
 
 
 class WindowSelect < WindowBase
     attr_accessor :dx, :dy
     attr_accessor :cursor
+	
+	include EventHandler
 
     def initialize(x,y,item,alpha=255)
         super(x,y,0,0,alpha)
 
         for i in 0..item.size-1
-            size = @font.size(item[i])
+            size = @font.query(item[i])
+			p size
             if @w < size.w  
                 @w = size.w
             end
             @h += size.h
         end
         
-
-
         @dx = 10
         @dy = (@h*0.6 - @h*0.5).ceil
         
         @w *= 1.5
         @h *= 1.2
 
-        @w = @w.ceil
-        @h = @h.ceil
+        @w = @w.ceil + 10
+        @h = @h.ceil + 5	
         
         @item = item
         @cursor = 0
@@ -71,10 +73,10 @@ class WindowSelect < WindowBase
             end
 
             if @align == CENTER
-                size = @font.size(@item[i])
+                size = @font.query(@item[i])
                 drawText(@w/2-size.w/2,@dy+20*i,@item[i])
             else
-                drawText(@dx,@dy+20*i,@item[i])
+                drawText(@dx,@dy+20*i+2,@item[i])
             end
         end
     end
@@ -87,23 +89,27 @@ class WindowSelect < WindowBase
                 if @alphaCur >= 128 or @alphaCur <= 32
                     @alphaInc *= -1
                 end
-            end
-
-            if $input.trigger(UP) and @cursor != 0
-                @cursor -= 1
-                @cursorChangedHandler.call(self, @cursor)
-            elsif $input.trigger(DOWN) and @cursor != @item.size-1
-                puts "ASDF"
-                @cursor += 1
-                @cursorChangedHandler.call(self, @cursor)
-            elsif $input.trigger(RETURN)
-                puts self
-                @itemSelectedHandler.call(self, @cursor)
-                return @cursor
-            end            
+            end 
         end
     end
 
+	def keyDown(key)
+		p key
+		case key
+			when UP
+				if not @cursor == 0
+					@cursor -= 1
+					@cursorChangedHandler.call(self, @cursor)
+				end
+			when DOWN
+				if not @cursor == @item.size-1
+					@cursor += 1
+					@cursorChangedHandler.call(self, @cursor)
+				end
+			when RETURN
+				@itemSelectedHandler.call(self, @cursor)
+		end
+	end
 
 ################
 

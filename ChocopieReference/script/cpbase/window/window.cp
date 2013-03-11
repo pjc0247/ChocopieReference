@@ -3,11 +3,15 @@
 #                           Window Base           #
 ###################################################
 
-Debug.protect("WindowBase - 커먼 리소스 로드 실패") do
-    $_windowBack    = Sprite.new("cpbase\\common\\windowBack.png")
-    $_windowFrame    = Sprite.new("cpbase\\common\\windowFrame.png")
-    $_windowFont    = Font.new("gulim.ttc",20)
+
+$_windowBack    = Sprite.new("cpbase\\common\\windowBack.png")
+$_windowFrame    = Sprite.new("cpbase\\common\\windowFrame.png")
+$_windowFont    = Font.new("gulim.ttc",20)
+
+if $_windowBack == nil or $_windowFrame == nil or $_windowFont == nil
+	Debug.error "WindowBase - Failed to load common resource"
 end
+
 
 $windowFocus = 0
 $windowFocused = nil
@@ -73,6 +77,7 @@ class WindowBase < RootObject
 
         @alpha = alpha
         @font = $_windowFont
+		p @font
         @tag = 0
         @id = rand(987654)+1
 
@@ -92,7 +97,6 @@ class WindowBase < RootObject
     def dispose
         $winmgr.delete self
         $layerWindow.delete self
-		super
     end
 
     def rect
