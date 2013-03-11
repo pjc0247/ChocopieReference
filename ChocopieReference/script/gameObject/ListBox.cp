@@ -85,11 +85,24 @@
 		@hot = ((y).to_f / (@font.size*1.2)).to_i + @scroll.value
     end
     def leftDown(x,y)
+		setFocus self
+
 		selected = ((y).to_f / (@font.size*1.2)).to_i + @scroll.value
 		return if @item[selected] == nil
 
 		changeItem selected
     end	
+	def keyDown(key)
+		case key
+			when UP
+				return if @select == 0
+				changeItem @select-1
+			when DOWN
+				return if @select == @item.size-1
+				changeItem @select+1
+		end
+	end
+
     
     def add(v)
         @item[@item.size] = v
