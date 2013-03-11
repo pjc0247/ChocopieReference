@@ -2,32 +2,35 @@
     def event(e,arg)
         super  # SceneBase.event
 
-        if e == QUIT
-            self.quit
-        elsif e == MOUSEMOVE
-            self.mouseMove(arg.x,arg.y,arg.state)
-        elsif e == LBUTTONDOWN
-            self.leftDown(arg.x,arg.y)
-        elsif e == LBUTTONUP
-            self.leftUp(arg.x,arg.y)
-        elsif e == RBUTTONDOWN
-            self.rightDown(arg.x,arg.y)
-        elsif e == RBUTTONUP
-            self.rightUp(arg.x,arg.y)
-        elsif e == KEYDOWN
-            self.keyDown(arg.key)
-        elsif e == KEYUP
-            self.keyUp(arg.key)
-        elsif e == MOUSEHOVER
-            self.mouseHover(arg.x,arg.y)
-        elsif e == MOUSELEAVE
-            self.mouseLeave(arg.x,arg.y)
-        elsif e == FINGERDOWN
-            self.fingerDown(arg.id,arg.x,arg.y)
-        elsif e == FINGERUP
-            self.fingerUp(arg.id,arg.x,arg.y)
-        elsif e == FINGERMOVE
-            self.fingerMove(arg.id,arg.x,arg.y)
+        case e
+			when QUIT
+	            self.quit
+			when MOUSEMOVE
+	            self.mouseMove(arg.x,arg.y,arg.state)
+			when LBUTTONDOWN
+				self.leftDown(arg.x,arg.y)
+			when LBUTTONUP
+	            self.leftUp(arg.x,arg.y)
+			when RBUTTONDOWN
+	            self.rightDown(arg.x,arg.y)
+	        when RBUTTONUP
+		       self.rightUp(arg.x,arg.y)
+	        when KEYDOWN
+		        self.keyDown(arg.key)
+	        when KEYUP
+		        self.keyUp(arg.key)
+	        when MOUSEHOVER
+		        self.mouseHover(arg.x,arg.y)
+	        when MOUSELEAVE
+		        self.mouseLeave(arg.x,arg.y)
+	        when FINGERDOWN
+		        self.fingerDown(arg.id,arg.x,arg.y)
+	        when FINGERUP
+		        self.fingerUp(arg.id,arg.x,arg.y)
+	        when FINGERMOVE
+		        self.fingerMove(arg.id,arg.x,arg.y)
+			else
+				# unknown event
         end
     end
 
