@@ -10,9 +10,8 @@ class EventManager
     def dispose
     end
     
-
-    def push(e,arg)
-        
+	
+    def push(e,arg)   
         if $cp_android == 1
             
             if(e == MOUSEMOVE or
@@ -29,6 +28,7 @@ class EventManager
 
         end
 
+		# 터치 이벤트 처리
         case e
 			when FINGERDOWN
 				$touch.add Finger.new(arg.id,arg.x,arg.y)
@@ -38,7 +38,9 @@ class EventManager
 	            $touch.move Finger.new(arg.id,arg.x,arg.y)
         end
 
+		# WindowManager에게 이벤트를 전달
         $winmgr.event(e,arg)
+		# 현재 Scene에 이벤트를 전달
         $scene.event(e,arg)
     end
 end
