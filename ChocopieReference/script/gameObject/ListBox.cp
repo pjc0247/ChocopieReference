@@ -77,12 +77,13 @@
 		@hot = ((y).to_f / (@font.size*1.2)).to_i + @scroll.value
     end
     def leftDown(x,y)
+		selected = ((y).to_f / (@font.size*1.2)).to_i + @scroll.value
+		return if @item[selected] == nil
 		@cache.delete @item[@select]
-        @select = ((y).to_f / (@font.size*1.2)).to_i + @scroll.value
+        @select = selected
 		@cache.delete @item[@select]
-        if @item[@select] != nil
-            @itemSelectedHandler.call(self,@select)
-        end
+
+        @itemSelectedHandler.call(self,@select)
     end
     
     def add(v)
