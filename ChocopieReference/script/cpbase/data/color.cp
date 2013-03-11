@@ -8,7 +8,7 @@
     def dispose
     end
 
-    def set(r,g,b,a=255)
+    def set(r=0,g=0,b=0,a=255)
         @r = r
         @g = g
         @b = b

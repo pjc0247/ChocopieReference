@@ -8,7 +8,7 @@
     def dispose
     end
 
-    def set(w,h)
+    def set(w=0,h=0)
         @w = w
         @h = h
     end

@@ -8,7 +8,7 @@
     def dispose
     end
 
-    def set(x,y)
+    def set(x=0,y=0)
         @x = x
         @y = y
     end
