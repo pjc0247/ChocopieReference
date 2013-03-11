@@ -29,14 +29,10 @@
         @cache.each do |key,value|
             value.dispose
         end
+		@cache.clear
     end
     def draw(x,y,msg)
-        if @cache[msg] == nil
-            befColor = @font.color
-            @font.color = Color.White
-            @cache[msg] = @font.render(msg)
-            @font.color = befColor
-        end
+        load(msg) if not loaded(msg)
         @cache[msg].color = @font.color
         @cache[msg].draw(x,y)
     end
