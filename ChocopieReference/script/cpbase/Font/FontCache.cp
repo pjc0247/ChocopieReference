@@ -7,10 +7,21 @@
         clear
     end
 
+	def loaded(msg)
+		@cache[msg]
+	end
+	def unload(msg)
+		delete msg
+	end
+	def load(msg)
+		return if loaded(msg)
+		befColor = @font.color
+        @font.color = Color.White
+        @cache[msg] = @font.render(msg)
+        @font.color = befColor
+	end
     def delete(msg)
-        if @cache[msg] == nil
-            return
-        end
+        return if not loaded(msg)
         @cache[msg].dispose
         @cache.delete_if { |key,value| key == msg} 
     end
