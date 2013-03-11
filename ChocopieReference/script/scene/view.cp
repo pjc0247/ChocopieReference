@@ -7,6 +7,10 @@ class Scene < SceneBase
     def initialize
         super
 
+		
+		@bgi = Sprite.new("bluesky.jpg")
+		@panorama = Panorama.new(@bgi,2,2,$graphic.size.w,$graphic.size.h)
+
         @fontTitle.size = 30
 
         @klassSearch = InputBox.new(10,10,150,30)
@@ -41,6 +45,8 @@ class Scene < SceneBase
         crt = $graphic.size
         $graphic.color = Color.White
         $graphic.fill(0,0,crt.w,crt.h)
+
+		@panorama.update
 
         drawText(20,356,"Chocopie Reference",@fontTitle, 4,3)
         @fontVersion.style = BOLD
