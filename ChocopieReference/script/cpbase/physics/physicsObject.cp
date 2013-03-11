@@ -8,8 +8,8 @@
 class PhysicsObject < GameObject
     attr_reader :physics
 
-    def initialize(bitmap)
-        super(0,0,bitmap)
+    def initialize(sprite)
+        super(0,0,sprite)
 
         @physics = Physics.new()
     end
