@@ -78,10 +78,10 @@ class Particle < GameObject
     def initialize(d,s)
         super(d.x,d.y,$_particleBlue)
 
-        @sx = 0
-        @sy = 0
+        @sx = d.sx
+        @sy = d.sy
         @angle = d.angle
-        @angleStep = 0
+        @angleStep = d.angleStep
         @angleDirection = d.angleDirection
         @alpha = d.alpha
         @alphaStep = d.alphaStep

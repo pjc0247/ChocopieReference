@@ -38,7 +38,7 @@ class GameObject < RootObject
 
         @id = 0
 
-        @layer = 0
+        @layer = nil
 
         @origin = Point.new(0,0)
 

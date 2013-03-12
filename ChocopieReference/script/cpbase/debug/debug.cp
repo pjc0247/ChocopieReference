@@ -41,11 +41,11 @@
     def self.protect(msg="none",&block)
         begin
             block.call
-        rescue
+        rescue => e
             Debug.error("An error has occurred\n\n" +
                         "message : " + msg  + "\n\n" +
-                        "code : " + block.to_s + "\n\n" +
-                        "error : " + "#{$!}")
+                        "code : " + e.backtrace[0] + "\n\n" +
+                        "error : " + e.message)
         end
     end
 end

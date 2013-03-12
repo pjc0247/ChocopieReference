@@ -48,7 +48,8 @@ def cpInitialize
     $layerInterface = Layer.new(Z_UI)
     $layerObject = Layer.new(Z_OBJECT)
     $layerWindow = Layer.new(Z_UI)
-    
+    $layerWindow.autoDispose = false
+
     $layerInterface.add $layerWindow
 
     $physics = Physics.new
