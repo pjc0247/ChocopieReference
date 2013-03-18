@@ -1,4 +1,6 @@
 ﻿class Scene
+    auto_dispose :true
+
     def initialize
     end
     def dispose

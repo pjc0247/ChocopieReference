@@ -1,8 +1,10 @@
+import 'cpbase/savedata/prefix.cp'
+
 class SaveData
 	attr_accessor :serializer
 	attr_reader :prefix
 	attr_reader :fp
-
+	
 	def initialize(path = nil)
 		@serializer = Marshal
 		@data = Hash.new
@@ -19,10 +21,14 @@ class SaveData
 	end
 
 	def open(path)
-		if File.exist?(path)
+		# 해당 파일이 이미 존재하면
+		if File.size(path) > 0
 			@fp = File.new(path, "rb+")
+			@empty = false
+		# 존재하지 않으면
 		else
 			@fp = File.new(path, "wb+")
+			@empty = true
 		end
 		
 		while not @fp.eof?
@@ -64,9 +70,16 @@ class SaveData
 	def save
 		close
 		@fp = File.new(@path, "wb+")
+
 		@data.each do |key, value|
 			write key, value
 		end
+
+		@fp.flush
+	end
+
+	def existed
+		@empty == false ? true : nil	
 	end
 
 	private

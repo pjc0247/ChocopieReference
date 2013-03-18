@@ -12,8 +12,7 @@ class SceneManager
     @@stack = Stack.new
 
     def initialize
-        @scene = nil
-        @old_scene = nil
+        #@scene = nil
     end
     def dispose
         @@stack.clear
@@ -23,8 +22,10 @@ class SceneManager
         @iv = {}
         @rc = {}
 
-        if @scene != nil    
-            @scene.dispose
+        if @scene != nil
+			Debug.protect("scene - dispose	") do
+	            @scene.dispose
+			end
 
             @scene.instance_variables.each do |v|
                 if @scene.instance_variable_get(v).retain != 0
@@ -53,7 +54,7 @@ class SceneManager
             puts "scene change : " + to
         end    
 
-        $keySkip = true    
+        #$keySkip = true    
     end
 
     def back

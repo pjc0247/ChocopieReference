@@ -55,7 +55,7 @@ def getFocus
     $windowFocused
 end
 
-class WindowBase < RootObject
+class WindowBase < ChocopieObject
     attr_accessor :x,:y,:w,:h,:alpha
     attr_accessor :font, :visible
     attr_reader :tag, :id
@@ -77,7 +77,6 @@ class WindowBase < RootObject
 
         @alpha = alpha
         @font = $_windowFont
-		p @font
         @tag = 0
         @id = rand(987654)+1
 
@@ -95,6 +94,7 @@ class WindowBase < RootObject
         initializeHandler
     end
     def dispose
+		super
         $winmgr.delete self
         $layerWindow.delete self
     end

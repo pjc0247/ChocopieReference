@@ -18,6 +18,8 @@ class ParticleGenerator < GameObject
         @sx = @sy = 0
         @color = Color.White
         @activity = 100
+
+		@layer.add self
     end
     def dispose
         @layer.dispose

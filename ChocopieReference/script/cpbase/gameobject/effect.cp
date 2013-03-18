@@ -3,7 +3,12 @@
 #                           Effect Class          #
 ###################################################
 
+import 'cpbase/gameobject/gameobject.cp'
+import 'cpbase/gameobject/z_order.cp'
+
 class EffectObject < GameObject
+	auto_dispose :false
+
     def initialize(x,y,w,h,link,img,interval = 30)
         super(x,y,img)
         @timer = Timer.new(interval)
@@ -48,23 +53,26 @@ class EffectObject < GameObject
 end
 
 class Effect
-    attr_accessor :sprite
+    #attr_accessor :sprite
 
-    def initialize(img,w,h,sfx=nil,interval=30)
+    def initialize(img,sfx=nil,interval=30)
         @sprite = Sprite.new(img,w,h)
         @sfx = sfx
         @interval = interval
         if @sfx != nil
-            @sfx = Sound.new(sfx,0)
+            @sfx = Sound.new(sfx, false)
         end
     end
-    def dispose
-        effectLayer = $objmgr.get(Z_EFFECT)
-        effectLayer.o.each do |key,value|
-            if value.sprite == @sprite
-                effectLayer.delete value
-            end
-        end
+    def dispose(force = true)
+        #effectLayer = $objmgr.get(Z_EFFECT)
+        #effectLayer.o.each do |key,value|
+		if force == true
+			$layerEffect.o.each do |key, value|
+				if value.sprite == @sprite
+					effectLayer.delete value
+				end
+			end
+		end
 
         @sprite.dispose
         if @sfx != nil
@@ -80,6 +88,25 @@ class Effect
     end
 
     def update
-        
     end
+
+	def sprite
+		@sprite
+	end
+	def sprite=(s)
+		if @sprite != nil
+			@sprite.dispose
+		end
+		@sprite = s
+	end
+
+	def sfx
+		@sfx
+	end
+	def sfx=(s)
+		if @sfx != nil
+			@sfx.dispose
+		end
+		@sfx = s
+	end
 end

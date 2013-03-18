@@ -42,11 +42,11 @@ class Timer
         end
     end
     def started
-	if @started == 1
-		return true
-	else
-		return nil
-	end
+		if @started == 1
+			return true
+		else
+			return nil
+		end
     end
     def resume
         @start_tick += getTicks-@pause

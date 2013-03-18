@@ -3,10 +3,14 @@
 #                           Scene Base            #
 ###################################################
 
-class SceneBase < RootObject
+class SceneBase < ChocopieObject
     #attr_accessor :_dispose
 
+    auto_dispose :true
+
     def initialize
+		super
+
         @id = 0
         
         #@_dispose = []

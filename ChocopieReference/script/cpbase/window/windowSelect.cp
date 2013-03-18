@@ -30,10 +30,10 @@ class WindowSelect < WindowBase
         end
         
         @dx = 10
-        @dy = (@h*0.6 - @h*0.5).ceil
+        @dy = (@h*0.1).ceil
         
         @w *= 1.5
-        @h *= 1.2
+        @h *= 1.15
 
         @w = @w.ceil + 10
         @h = @h.ceil + 5	

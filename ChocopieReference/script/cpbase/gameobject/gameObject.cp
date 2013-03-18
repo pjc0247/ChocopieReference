@@ -3,7 +3,7 @@
 #                           Game Object           #
 ###################################################
 
-class GameObject < RootObject
+class GameObject < ChocopieObject
     attr_accessor :x, :y
     attr_accessor :rect, :layer
     attr_accessor :scale
@@ -18,6 +18,8 @@ class GameObject < RootObject
     attr_accessor :repeat
 
     attr_accessor :cid
+
+	keep :sprite, :layer
 
     def initialize(x,y,sprite = nil)
         @x = x
@@ -168,11 +170,17 @@ class GameObject < RootObject
             dst = s
         end
 
-        dst.color = Color.new(
-            (@color.r*(1.0/255.0)) * (@layer.color.r*(1.0/255.0)) * 255,
-            (@color.g*(1.0/255.0)) * (@layer.color.g*(1.0/255.0)) * 255,
-            (@color.b*(1.0/255.0)) * (@layer.color.b*(1.0/255.0)) * 255)
-
+		if @layer != nil
+			dst.color = Color.new(
+				(@color.r*(1.0/255.0)) * (@layer.color.r*(1.0/255.0)) * 255,
+				(@color.g*(1.0/255.0)) * (@layer.color.g*(1.0/255.0)) * 255,
+				(@color.b*(1.0/255.0)) * (@layer.color.b*(1.0/255.0)) * 255)
+		else
+			dst.color = Color.new(
+				(@color.r*(1.0/255.0)) * 255,
+				(@color.g*(1.0/255.0)) * 255,
+				(@color.b*(1.0/255.0)) * 255)
+		end
     end
     def applyAlpha(s=nil)
         if s == nil
@@ -181,7 +189,11 @@ class GameObject < RootObject
             dst = s
         end
 
-        dst.alpha = (@alpha*(1.0/255.0)) * (@layer.alpha*(1.0/255.0)) * 255
+		if @layer != nil
+	        dst.alpha = (@alpha*(1.0/255.0)) * (@layer.alpha*(1.0/255.0)) * 255
+		else
+			dst.alpha = (@alpha*(1.0/255.0)) * 255
+		end
     end
     def applyAngle(s=nil)
         if s == nil

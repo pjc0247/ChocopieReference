@@ -4,6 +4,8 @@
 ###################################################
 
 class Panorama < GameObject
+	auto_dispose :false
+
 	attr_accessor :sx, :sy
 	attr_accessor :w,  :y
 	attr_accessor :scroll

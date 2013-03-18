@@ -15,13 +15,7 @@ class ObjectManager
         @l.push layer
 
 ## sort
-        for i in 0..@l.size-1
-            for j in i..@l.size-1
-                if @l[i].z < @l[j].z
-                    @l[i],@l[j] = @l[j],@l[i]
-                end
-            end
-        end
+        sort
     end
 
     def delete(layer)
@@ -36,6 +30,16 @@ class ObjectManager
             end
         end
     end
+
+	def sort
+		for i in 0..@l.size-1
+            for j in i..@l.size-1
+                if @l[i].z < @l[j].z
+                    @l[i],@l[j] = @l[j],@l[i]
+                end
+            end
+        end
+	end
 
     def update
         @l.each do |value|    

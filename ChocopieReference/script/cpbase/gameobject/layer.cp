@@ -11,7 +11,7 @@
 # 기본적으로 게임 오브젝트들은 레이어에 포함되어 자동으로 관리됩니다.
 # 레이어 자신은 ObjectManager에 의해 관리됩니다.
 class Layer
-    attr_accessor :z                        # 레이어의 z-order
+    #attr_accessor :z                        # 레이어의 z-order
     attr_accessor :o                        # 레이어에 포함된 object들의 목록
     attr_accessor :visible                    # 이 레이어를 표시할 것인지?
     attr_accessor :drawOnly, :autoDispose    # 그리기 전용인지?, 자동적으로 dispose시 모든 객체들을 dispose시킬 것인지?
@@ -101,6 +101,17 @@ class Layer
         end
     end
 
+	def frozen
+		@freezed == true ? true : nil
+	end
+
+	def z
+		@z
+	end
+	def z=(v)
+		@z = v
+		$objmgr.sort
+	end
 
     def freeze
         @freezed = true
