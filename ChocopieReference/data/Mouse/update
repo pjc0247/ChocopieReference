@@ -1,0 +1,11 @@
+!size 25
+!style bold
+update
+
+!size 18
+!style none
+   Mouse 클래스를 업데이트합니다.
+
+   현재 마우스 상태를 새롭게 얻어옵니다.
+
+   이 메소드는 Chocopie 내부적으로 자동으로 실행됩니다.

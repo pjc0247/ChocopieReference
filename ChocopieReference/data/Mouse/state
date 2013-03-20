@@ -1,0 +1,26 @@
+!size 25
+!style bold
+state
+
+!size 18
+!style none
+   지정된 마우스 버튼의 현재 상태를 조사합니다.
+
+!size 21
+!style bold
+  파라미터
+!size 18
+!style bold
+          Button (MouseButton)
+!style none
+          조사할 마우스 버튼
+
+!size 21
+!style bold
+  반환값
+!size 18
+!style none
+          버튼이 눌려져 있을 경우 true
+          아니면 nil
+
+
