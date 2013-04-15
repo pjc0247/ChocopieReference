@@ -3,7 +3,6 @@
 #                           Layer                 #
 ###################################################
 
-
 # 2012 5 15 - 레이어를 만들면 자동으로 오브젝트 매니저에 추가
 
 
@@ -20,7 +19,7 @@ class Layer
     attr_reader :freezed
 
     def initialize(z = 0)
-        @o = {}
+        @o = Array.new
         @z = z
         @visible = true
         @drawOnly = false
@@ -36,9 +35,9 @@ class Layer
         $objmgr.add self
     end
     def dispose
-        @o.each do |key,value|
+        @o.each do |value|
             if @autoDispose == true
-                puts "auto disposing : " + key.to_s
+                puts "auto disposing : " + value.to_s
                 value.dispose
             end
         end
@@ -51,15 +50,14 @@ class Layer
     end
 
     def clear
-        @o.each do |key,value|
+        @o.each do |value|
             if @autoDispose == true
-                puts "auto disposing : " + key.to_s
+                puts "auto disposing : " + value.to_s
                 value.dispose
             end
         end
 
-        @o = nil
-        @o = {}
+        @o.clear
         @visible = true
         @drawOnly = false
         @autoDispose = true
@@ -69,7 +67,7 @@ class Layer
     end
 
     def add(o)
-        @o[o] = o
+        @o.push o
         
         Debug.protect do                        ## GameObject가 아닌 오브젝트를 추가했을때 layer변수가 없어서 나는 에러메세지를 막기 위해
             o.layer = self
@@ -77,9 +75,9 @@ class Layer
     end
 
     def delete(o)
-        @o.delete_if {|v,a| a == o }
+        @o.delete o
     end
-    def delete_if(&block)
+    def delete_if(&block)	
         @o.delete_if &block
     end
 
@@ -91,7 +89,7 @@ class Layer
         if @visible == false
             ##안보이는 상태이면 아무것도 안함
         else
-            @o.each do |key,value|
+            @o.each do |value|
                 if @drawOnly == true or @freezed == true
                     value.draw(value.x,value.y)
                 else
