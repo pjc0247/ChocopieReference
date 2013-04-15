@@ -1,0 +1,14 @@
+!size 25
+!style bold
+[Class] ObjectManager
+
+!size 18
+!style none
+   ChocopieObject들을 관리하는 매니저 클래스입니다.
+
+   $objmgr 전역 변수를 통해 접근할 수 있으며
+   이 매니저에 등록된 ChocopieObject들은 자동적으로
+   update메소드가 호출됩니다.
+
+
+
