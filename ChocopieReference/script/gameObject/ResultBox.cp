@@ -54,6 +54,8 @@ class ResultBox < WindowBase
         @ch = 0 # content height
         
         @font = []
+        
+        # pre-caching
         @font[20] = Font.new("gulim.ttc", 20)
         @font[13] = Font.new("gulim.ttc", 13)
         
